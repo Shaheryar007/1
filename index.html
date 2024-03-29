@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="my()">name</button>
+  <span id="kk"></span>  <br>
+  <button onclick="mah()">age</button>
+  <span id="jj"></span> <br>
+  <button onclick="mak()">dob</button>
+  <span id="mm"></span> <br>
+  <button onclick="man()">dob</button>
+  <span id="nn"></span>  <br>
+  <button onclick="mam()">adress</button> 
+  <span id="bb"></span>   <br>
+  <button onclick="mal()">contact</button>
+  <span id="qq"></span> <br>
+     
+  
+
+    <script>
+
+    var name=prompt("enter name");
+    var age=prompt("enter age");
+    var dob=prompt("enter dob");
+    var city=prompt("enter city");
+    var adress=prompt("enter adress");
+    var contact=prompt("enter cell no.");
+
+    let object={
+        name:name,
+        age:age,
+        dob:dob,
+        city:city,
+        adress:adress,
+        contact:contact,
+    }
+    function my() {
+        document.getElementById("kk").innerHTML=object.name;
+    }
+    function mah() {
+        document.getElementById("jj").innerHTML=object.age;
+    }
+    function mak() {
+        document.getElementById("mm").innerHTML=object.dob;
+    }
+    function man() {
+        document.getElementById("nn").innerHTML=object.city;
+    }
+    function mam() {
+        document.getElementById("bb").innerHTML=object.adress;
+    }
+    function mal() {
+        document.getElementById("qq").innerHTML=object.contact;
+    }
+
+
+
+
+    </script>
+</body>
+</html>
